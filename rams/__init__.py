@@ -292,7 +292,7 @@ HELP_LOGO = os.environ.get(
 IG_ALIVE = os.environ.get("IG_ALIVE") or "instagram.com/ramadh20"
 
 # Default emoji help
-EMOJI_HELP = os.environ.get("EMOJI_HELP") or None
+EMOJI_HELP = os.environ.get("EMOJI_HELP") or "🕷"
 
 # Picture For VCPLUGIN
 PLAY_PIC = (
