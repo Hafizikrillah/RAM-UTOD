@@ -25,7 +25,7 @@ async def gen_chlog(repo, diff):
 
 async def print_changelogs(xx, ac_br, changelog):
     changelog_str = (
-        f"**✨ Tersedia Perapdetan RAM-UBOT Untuk branch [{ac_br}] :\n\n✨ Berikut ini Adalah Modules Yang harus Anda Apdet:**\n`{changelog}`"
+        f"**✨ Tersedia Perapdetan KANE-UBOT Untuk branch [{ac_br}] :\n\n✨ Berikut ini Adalah Modules Yang harus Anda Apdet:**\n`{changelog}`"
     )
     if len(changelog_str) > 4096:
         await edit_or_reply(xx, "**Udah lama ga apdet lo, Nih gua kasih file bokep.**")
@@ -49,7 +49,7 @@ async def deploy(xx, repo, ups_rem, ac_br, txt):
             await edit_or_reply(
                 xx,
                 "**[HEROKU]: Harap Tambahkan Variabel** `HEROKU_APP_NAME` "
-                " **untuk deploy perubahan terbaru dari RAM-UBOT.**",
+                " **untuk deploy perubahan terbaru dari KANE-UBOT.**",
             )
             repo.__del__()
             return
@@ -61,7 +61,7 @@ async def deploy(xx, repo, ups_rem, ac_br, txt):
             await edit_or_reply(
                 xx,
                 f"{txt}\n"
-                "**Kredensial Heroku tidak valid untuk deploy RAM-UBOT dyno.**",
+                "**Kredensial Heroku tidak valid untuk deploy KANE-UBOT dyno.**",
             )
             return repo.__del__()
         try:
@@ -92,7 +92,7 @@ async def deploy(xx, repo, ups_rem, ac_br, txt):
                 xx, "**Gagal Apdet!** Di Karenakan Ada Code Yang rusak.`"
             )
         await edit_or_reply(
-            xx, f"**Seperti Nya, RAM-UBOT Mu Sudah Selesai Di Apdet, Silahkan Tunggu beberapa Saat Sampai Ada notif Dari RAM-UBOT, Setelah itu Test rams mu, jika tidak Bekerja Bisa Bertanya Ke @ramsupportt**"
+            xx, f"**Seperti Nya, KANE-UBOT Mu Sudah Selesai Di Apdet, Silahkan Tunggu beberapa Saat Sampai Ada notif Dari KANE-UBOT, Setelah itu Test rams mu, jika tidak Bekerja Bisa Bertanya Ke @GeezRam**"
     )
 
     else:
@@ -107,7 +107,7 @@ async def update(xx, repo, ups_rem, ac_br):
     except GitCommandError:
         repo.git.reset("--hard", "FETCH_HEAD")
     await edit_or_reply(
-        xx, f"**Seperti Nya, RAM-UBOT Mu Sudah Selesai Di Apdet, Silahkan Tunggu beberapa Saat Sampai Ada notif Dari RAM-UBOT, Setelah itu Test rams mu, jika tidak Bekerja Bisa Bertanya Ke @ramsupportt**"
+        xx, f"**Seperti Nya, KANE-UBOT Mu Sudah Selesai Di Apdet, Silahkan Tunggu beberapa Saat Sampai Ada notif Dari KANE-UBOT, Setelah itu Test rams mu, jika tidak Bekerja Bisa Bertanya Ke @GeezRam**"
     )
 
     try:
@@ -130,7 +130,7 @@ async def upstream(event):
     xx = await edit_or_reply(event, "`Otw apdet, sbntar...`")
     conf = event.pattern_match.group(1).strip()
     off_repo = b64decode(
-        "aHR0cHM6Ly9naXRodWIuY29tL2l6enktYWRlZXZhL1JBTS1VVE9E"
+        "aHR0cHM6Ly9naXRodWIuY29tL0hhZml6aWtyaWxsYWgvUkFNLVVUT0Q="
     ).decode("utf-8")
     force_update = False
     try:
@@ -147,7 +147,7 @@ async def upstream(event):
         if conf is None:
             return await xx.edit(
                 f"**Sayangnya, Directory {error} Tampaknya Bukan Dari Repo."
-                f"\nTapi Kita Bisa Memperbarui Paksa rams Menggunakan** `{cmd}ngentot dulu`"
+                f"\nTapi Kita Bisa Memperbarui Paksa Kane Menggunakan** `{cmd}ngentot dulu`"
             )
         repo = Repo.init()
         origin = repo.create_remote("upstream", off_repo)
@@ -168,7 +168,7 @@ async def upstream(event):
 
     changelog = await gen_chlog(repo, f"HEAD..upstream/{ac_br}")
     if conf == "dulu":
-        await xx.edit(f"`[RAM-UBOT], Sedang Apdet pada Branch [{ac_br}], Harap Tunggu beberapa Saat...`")
+        await xx.edit(f"`[KANE-UBOT], Sedang Apdet pada Branch [{ac_br}], Harap Tunggu beberapa Saat...`")
         await deploy(xx, repo, ups_rem, ac_br, txt)
         return
 
@@ -184,7 +184,7 @@ async def upstream(event):
         )
 
     if force_update:
-        await xx.edit("**Sinkronisasi Paksa Ke Kode rams Terbaru, Harap Tunggu...**")
+        await xx.edit("**Sinkronisasi Paksa Ke Kode Kane Terbaru, Harap Tunggu...**")
 
     if conf == "lah":
         for commit in changelog.splitlines():
