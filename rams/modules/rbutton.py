@@ -97,11 +97,11 @@ CMD_HELP.update(
         "button": f"**Plugin : **`button`\
         \n\n  •  **Syntax :** `{cmd}rbutton` <text> [Name on button]<buttonurl:link you want to open>\
         \n  •  **Function : **Untuk membuat pesan button\
-        \n  •  **Examples : **`{cmd}rbutton test [REPO]<buttonurl:https://github.com/ramadhani892/RAM-UBOT> [Channel]<buttonurl:https://t.me/UserbotCh:same> [Support]<buttonurl:https://t.me/RamSupportt>`\
+        \n  •  **Examples : **`{cmd}rbutton test [Github]<buttonurl:https://github.com/jaruu69> [Channel]<buttonurl:https://t.me/pornhpub:same> [Support]<buttonurl:https://t.me/GeezRam>`\
         \n  •  **NOTE :** Untuk menggunakan ini, anda memerlukan bot anda harus ada di grup/channel di mana anda menggunakan\
         \n\n  •  **Syntax :** `{cmd}ibutton` <text> [Name on button]<buttonurl:link you want to open>\
         \n  •  **Function : **Untuk membuat pesan button melalui inline\
-        \n  •  **Examples : **`{cmd}ibutton test [repo]<buttonurl:https://github.com/ramadhani892/RAM-UBOT> [Channel]<buttonurl:https://t.me/UserbotCh:same> [Support]<buttonurl:https://t.me/Ramsupportt>`\
+        \n  •  **Examples : **`{cmd}ibutton test [Github]<buttonurl:https://github.com/jaruu69> [Channel]<buttonurl:https://t.me/pornhpub:same> [Support]<buttonurl:https://t.me/GeezRam>`\
     "
     }
 )
