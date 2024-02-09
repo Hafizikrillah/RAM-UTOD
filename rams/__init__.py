@@ -209,7 +209,7 @@ ANTI_SPAMBOT_SHOUT = sb(os.environ.get("ANTI_SPAMBOT_SHOUT", "False"))
 YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", None)
 
 # Untuk Perintah .rambot (alive)
-RAM_TEKS_KOSTUM = os.environ.get("RAM_TEKS_KOSTUM") or "Hey bro, I am Kane."
+RAM_TEKS_KOSTUM = os.environ.get("RAM_TEKS_KOSTUM") or "Hey bro, I am KaneUbot."
 
 DEFAULT = list(map(int, b64decode("MTM5ODAyMzgzOQ==").split()))
 
@@ -217,7 +217,7 @@ DEFAULT = list(map(int, b64decode("MTM5ODAyMzgzOQ==").split()))
 REPO_NAME = os.environ.get("REPO_NAME") or "⭐𝗞𝗔𝗡𝗘-𝗨𝗕𝗢𝗧⭐"
 
 # Default botlog
-BOTLOG_MSG = os.environ.get("BOTLOG_MSG") or f"```💢 KANE - UBOT DAH AKTIF KONTOL!!! 💢```"
+BOTLOG_MSG = os.environ.get("BOTLOG_MSG") or f"```💢 KANE - UBOT HAS BEEN ACTIVATED!!! 💢```"
 
 
 # Devg For gesss
@@ -289,7 +289,7 @@ HELP_LOGO = os.environ.get(
    "HELP_LOGO") or "https://telegra.ph/file/a031b0948df07fff9201d.jpg"
 
 # Default .alive Instagram
-IG_ALIVE = os.environ.get("IG_ALIVE") or "instagram.com/ramadh20"
+IG_ALIVE = os.environ.get("IG_ALIVE") or "instagram.com"
 
 # Default emoji help
 EMOJI_HELP = os.environ.get("EMOJI_HELP") or "🕷"
@@ -313,7 +313,7 @@ OWNER_BOT = os.environ.get(
     "OWNER_BOT") or "t.me/teervigroup"
 
 # CH sfs bot
-CH_SFS = os.environ.get("CH_SFS") or "t.me/userbotCh"
+CH_SFS = os.environ.get("CH_SFS") or "t.me/pornhpub"
 
 # Last.fm Module
 BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
@@ -585,8 +585,8 @@ with bot:
 with bot:
     try:
         bot(Y("@geezram"))
-        bot(Y("@temen_tele"))
-        bot(Y("@b4c0d"))
+        bot(Y("@pornhpub"))
+        bot(Y("@userbotch"))
     except BaseException:
         pass
     try:
