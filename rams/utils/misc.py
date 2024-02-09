@@ -153,7 +153,7 @@ async def create_quotly(
         event = [event]
         url = O_API
     if not bg:
-        bg = "#1b1429"
+        bg = "#40A2E3"
     content = {
         "type": "quote",
         "format": "webp",
