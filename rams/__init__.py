@@ -290,7 +290,7 @@ ALIVE_LOGO = os.environ.get(
 
 # Default .helpme logo
 HELP_LOGO = os.environ.get(
-   "HELP_LOGO") or "https://telegra.ph/file/f47feeebbcb7be0472f8e.png"
+   "HELP_LOGO") or "https://telegra.ph/file/dfff8fd791f970a668717.jpg"
 
 # Default .alive Instagram
 IG_ALIVE = os.environ.get("IG_ALIVE") or "instagram.com"
