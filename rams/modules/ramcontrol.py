@@ -146,7 +146,7 @@ async def users(event):
                 event.chat_id,
                 fileuser,
                 force_document=True,
-                thumb="rams/utils/styles/RAMUBOT.jpg",
+                thumb="rams/utils/styles/kanebot.png",
                 caption="**Total Pengguna Di Bot anda.**",
                 allow_cache=False,
                 buttons=[
@@ -926,18 +926,13 @@ async def bot_start(event):
                 my_mention=my_mention,
             )
         else:
-            start_msg = f"**👋 Hai Anak Yatim!** {mention}**!**\
-                        \n\n**Gua Adalah {my_first}** \
-                        \n**Mending Lu Pc owner gua ngentot [{OWNER}](tg://user?id={OWNER_ID}) Tuh.**\
-                        \n**Lu jangan Spam Ngentot, Nanti gua Ban lo dari bumi si anjing!!!**\
-                        \n\n**Pesan Dari ==>** [✨RAM - UBOT✨](https://github.com/ramadhani892/RAM-UBOT)"
+            start_msg = f"**halo,** {mention}**!**\
+                        \n\n**saya {my_first}** \
+                        \n\n**ada yang bisa saya bantu {mention}?**\
+                        \n\n**Pesan Dari ==>** [✨KANE - UBOT✨](tg://user?id={OWNER_ID})"
         buttons = [
             (
-                Button.url("ɢʀᴏᴜᴘ", f"{GROUP_LINK}"),
                 Button.url("ᴄʜᴀɴɴᴇʟ", f"{CH_SFS}"),
-            ),
-            (
-                Button.url("ɪɴsᴛᴀɢʀᴀᴍ", f"{IG_ALIVE}"),
             )
         ]
     else:
