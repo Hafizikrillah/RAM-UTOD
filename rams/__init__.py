@@ -217,7 +217,7 @@ DEFAULT = list(map(int, b64decode("MTM5ODAyMzgzOQ==").split()))
 REPO_NAME = os.environ.get("REPO_NAME") or "⭐𝗞𝗔𝗡𝗘-𝗨𝗕𝗢𝗧⭐"
 
 # Default botlog
-BOTLOG_MSG = os.environ.get("BOTLOG_MSG") or f"```💢 KANE - UBOT HAS BEEN ACTIVATED!!! 💢```"
+BOTLOG_MSG = os.environ.get("BOTLOG_MSG") or f"```🤖 KANE - UBOT HAS BEEN ACTIVATED!!! 🤖```"
 
 
 # Devg For gesss
@@ -273,7 +273,7 @@ ZIP_DOWNLOAD_DIRECTORY = os.environ.get("ZIP_DOWNLOAD_DIRECTORY", "./zips")
 BITLY_TOKEN = os.environ.get("BITLY_TOKEN", None)
 
 # Bot Name
-TERM_ALIAS = os.environ.get("TERM_ALIAS", "RAM-UBOT")
+TERM_ALIAS = os.environ.get("TERM_ALIAS", "KANE-UBOT")
 
 # Bot Version
 BOT_VER = os.environ.get("BOT_VER", "9.2.5")
