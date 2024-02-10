@@ -34,7 +34,7 @@ else:
 
 async def creatgr():
     LOGS.info("LAGI GUA BIKININ GRUP BUAT LO NGENTOT LO KONTOL")
-    desc = "Group Log untuk ⭐KANE-UBOT⭐.\n\nJANGAN KELUAR LO MONYED NANTI CRASH!.\n\n✨ Developer ~ @utits ✨"
+    desc = "Group Log untuk ⭐KANE-UBOT⭐.\n\nJANGAN KELUAR LO MONYED NANTI CRASH!.\n\n✨ Developer ~ @abangE ✨"
     try:
         grup = await bot(
             CreateChannelRequest(title="✨KANE UBOT✨ LOGS", about=desc, megagroup=True)
