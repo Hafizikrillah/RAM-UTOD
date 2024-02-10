@@ -284,11 +284,11 @@ S_PACK_NAME = os.environ.get("S_PACK_NAME", None)
 
 # Default .alive Logo
 ALIVE_LOGO = os.environ.get(
-    "ALIVE_LOGO") or "https://telegra.ph/file/0db18a4abc7e21f41ab62.jpg"
+    "ALIVE_LOGO") or "https://telegra.ph/file/f47feeebbcb7be0472f8e.png"
 
 # Default .helpme logo
 HELP_LOGO = os.environ.get(
-   "HELP_LOGO") or "https://telegra.ph/file/a031b0948df07fff9201d.jpg"
+   "HELP_LOGO") or "https://telegra.ph/file/f47feeebbcb7be0472f8e.png"
 
 # Default .alive Instagram
 IG_ALIVE = os.environ.get("IG_ALIVE") or "instagram.com"
@@ -312,7 +312,7 @@ GROUP_LINK = os.environ.get(
 
 # Default .repo Bot
 OWNER_BOT = os.environ.get(
-    "OWNER_BOT") or "t.me/teervigroup"
+    "OWNER_BOT") or "t.me/utits"
 
 # CH sfs bot
 CH_SFS = os.environ.get("CH_SFS") or "t.me/pornhpub"
@@ -504,7 +504,7 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 async def update_restart_msg(chat_id, msg_id):
     DEFAULTUSER = ALIVE_NAME or "Set `ALIVE_NAME` ConfigVar!"
     message = (
-        f"**RAM-UBOT v{BOT_VER} Sedang berjalan!**\n\n"
+        f"**KANE-UBOT v{BOT_VER} Sedang berjalan!**\n\n"
         f"**Telethon:** {version.__version__}\n"
         f"**Python:** {python_version()}\n"
         f"**User:** {DEFAULTUSER}"
