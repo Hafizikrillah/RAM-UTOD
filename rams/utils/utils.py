@@ -55,10 +55,10 @@ async def autobot():
         return
     await bot.start()
     await bot.send_message(
-        BOTLOG_CHATID, "**GUA LAGI BIKIN BOT ASISSTANT DI @BOTFATHER YA NGENTOD, SABAR DULU LU, KALO GA SABAR MATI AJA NYUSUL BAPAK LO**"
+        BOTLOG_CHATID, "**GUA LAGI BIKIN BOT ASSISTANT DI @BOTFATHER YA NGENTOD, SABAR DULU LU, KALO GA SABAR MATI AJA NYUSUL BAPAK LO**"
     )
     who = await bot.get_me()
-    name = who.first_name + "Bot"
+    name = who.first_name + "Assistant"
     if who.username:
         username = who.username + "TapiDiaBot"
     else:
@@ -111,7 +111,7 @@ async def autobot():
             await asyncio.sleep(1)
             await bot.send_message(bf, f"@{username}")
             await asyncio.sleep(1)
-            await bot.send_file(bf, "rams/utils/styles/asisstant.jpg")
+            await bot.send_file(bf, "rams/utils/styles/kanebot.png")
             await asyncio.sleep(3)
             await bot.send_message(bf, "/setabouttext")
             await asyncio.sleep(1)
@@ -153,7 +153,7 @@ async def autobot():
         await asyncio.sleep(1)
         await bot.send_message(bf, f"@{username}")
         await asyncio.sleep(1)
-        await bot.send_file(bf, "rams/utils/styles/asisstant.jpg")
+        await bot.send_file(bf, "rams/utils/styles/kanebot.png")
         await asyncio.sleep(3)
         await bot.send_message(bf, "/setabouttext")
         await asyncio.sleep(1)
