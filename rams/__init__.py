@@ -314,10 +314,10 @@ GROUP_LINK = os.environ.get(
 
 # Default .repo Bot
 OWNER_BOT = os.environ.get(
-    "OWNER_BOT") or "t.me/utits"
+    "OWNER_BOT") or "t.me/abangE"
 
 # CH sfs bot
-CH_SFS = os.environ.get("CH_SFS") or "t.me/pornhpub"
+CH_SFS = os.environ.get("CH_SFS") or "t.me/secretuo"
 
 # Last.fm Module
 BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
