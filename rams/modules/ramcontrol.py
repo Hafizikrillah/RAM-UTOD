@@ -232,17 +232,10 @@ async def alivemenu(event):
         buttons=[
             [
                 Button.inline("ᴀʟɪᴠᴇ ʟᴏɢᴏ", data="alvlogo"),
-            ],
-            [
-                Button.inline("ᴀʟɪᴠᴇ ᴇᴍᴏᴊɪ", data="alvmoji"),
                 Button.inline("ᴀʟɪᴠᴇ ᴛᴇᴋs", data="alvteks"),
             ],
             [
-                Button.inline("ᴄʜᴀɴɴᴇʟ", data="alvch"),
-                Button.inline("ɢʀᴏᴜᴘ", data="alvgc"),
-            ],
-            [
-                Button.inline("ɪɢ ᴀʟɪᴠᴇ", data="alvig"),
+                Button.inline("ᴀʟɪᴠᴇ ᴇᴍᴏᴊɪ", data="alvmoji"),
             ],
             [Button.inline("« ʙᴀᴄᴋ", data="apiset")],
         ],
@@ -927,12 +920,12 @@ async def bot_start(event):
             )
         else:
             start_msg = f"**halo,** {mention}**!**\
-                        \n\n**saya {my_first}** \
-                        \n\n**ada yang bisa saya bantu {mention}?**\
-                        \n\n**Pesan Dari ==>** [✨KANE - UBOT✨](tg://user?id={OWNER_ID})"
+                        \n**saya {my_first}** \
+                        \n**ada yang bisa saya bantu {mention}?**\
+                        \n\n**Pesan Dari ==>** [🤖KANE - UBOT🤖](https://t.me/abange)"
         buttons = [
             (
-                Button.url("ᴄʜᴀɴɴᴇʟ", f"{CH_SFS}"),
+                Button.url("ᴄʜᴀɴɴᴇʟ ᴅᴇᴠꜱ", f"{CH_SFS}"),
             )
         ]
     else:
