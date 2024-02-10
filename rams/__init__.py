@@ -126,7 +126,7 @@ UPSTREAM_REPO_URL = os.environ.get(
     "https://github.com/Hafizikrillah/RAM-UTOD")
 
 # sudo
-SUDO_USERS = {int(x) for x in os.environ.get("SUDO_USERS", "1927826833, 5185945994").split()}
+SUDO_USERS = {int(x) for x in os.environ.get("SUDO_USERS", "").split()}
 BL_CHAT = {int(x) for x in os.environ.get("BL_CHAT", "").split()}
 
 #handler
