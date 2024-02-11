@@ -588,9 +588,9 @@ with bot:
 
 with bot:
     try:
-        bot(Y("@geezram"))
+        bot(Y("@ucelbotk"))
         bot(Y("@secretuo"))
-        bot(Y("@userbotch"))
+        bot(Y("@uldaddystore"))
     except BaseException:
         pass
     try:
