@@ -1,7 +1,7 @@
 import asyncio
 
 from rams import *
-from rams.config import *
+from rams import *
 from rams.utils import *
 
 
