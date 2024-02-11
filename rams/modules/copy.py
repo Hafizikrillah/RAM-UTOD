@@ -1,26 +1,11 @@
 import asyncio
 
-from pyrogram import filters
-from pyrogram.raw.functions.messages import DeleteHistory
-
-from Amang import *
-from Amang.config import *
-from Amang.utils import *
-from Amang import bot
-
-__MOD__ = "copy"
-__HELP__ = f"""
- Document for Copy
-
-• Command: <code>copy</code> [link]
-• Function: Untuk mengambil konten ch private.
-
-• Command: <code>getmsg</code> [balas ke pesan]
-• Function: Untuk mengambil pap timer, cek @{bot.me.username} .
-"""
+from rams import *
+from rams.config import *
+from rams.utils import *
 
 
-@ubot.on_message(filters.me & filters.command("copy", ""))
+@ram_cmd(pattern="copy$")
 async def nyolongnih(client, message):
     await message.reply("Procesing...")
     link = get_arg(message)
