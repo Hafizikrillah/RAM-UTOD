@@ -232,10 +232,10 @@ async def alivemenu(event):
         buttons=[
             [
                 Button.inline("ᴀʟɪᴠᴇ ʟᴏɢᴏ", data="alvlogo"),
-                Button.inline("ᴀʟɪᴠᴇ ᴛᴇᴋs", data="alvteks"),
             ],
             [
                 Button.inline("ᴀʟɪᴠᴇ ᴇᴍᴏᴊɪ", data="alvmoji"),
+                Button.inline("ᴀʟɪᴠᴇ ᴛᴇᴋs", data="alvteks"),
             ],
             [Button.inline("« ʙᴀᴄᴋ", data="apiset")],
         ],
