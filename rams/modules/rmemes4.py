@@ -205,7 +205,7 @@ async def _(typew):
     await typew.delete()
 
 
-@ram_cmd(pattern="ya(?: |$)(.*)")
+@ram_cmd(pattern="y(?: |$)(.*)")
 async def _(typew):
     await typew.client.send_message(
         typew.chat_id, "‡‡‡‡‡‡‡‡‡‡‡‡▄▄▄▄\n"
@@ -373,9 +373,9 @@ async def _(kikem):
 
 @ram_cmd(pattern="gi(?: |$)(.*)")
 async def _(igehy):
-    typew = await edit_or_reply(igehy, "**Mutualan Yukkk!...**")
-    sleep(2)
-    await typew.edit(f"𝐈𝐍𝐒𝐓𝐀𝐆𝐑𝐀𝐌= [𝐓𝐄𝐊𝐀𝐍]({IG_ALIVE})")
+    typew = await edit_or_reply(igehy, "**Kenalan Sama Owner Yukkk!...**")
+    sleep(1)
+    await typew.edit(f"𝐊𝐀𝐍𝐄 𝐆𝐀𝐍𝐓𝐄𝐍𝐆= [𝐓𝐄𝐊𝐀𝐍](https://t.me/abange)")
 
 
 @ram_cmd(pattern="fck(?: |$)(.*)")
