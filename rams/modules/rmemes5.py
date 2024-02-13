@@ -399,7 +399,7 @@ async def _(event):
             "`Mengirim Cintaku.. 52%\n█████████████▒▒▒▒▒▒▒▒▒▒▒▒ `",
             "`Mengirim Cintaku.. 84%\n█████████████████████▒▒▒▒ `",
             "`Mengirim Cintaku.. 100%\n█████████CINTAKU███████████ `",
-            "`Cintaku Sekarang Sepenuhnya Terkirim Padamu, Dan Sekarang Aku Sangat Mencintai Mu, I Love You 💞`",
+            "Cintaku Sekarang Sepenuhnya Terkirim Padamu, Dan Sekarang Aku Sangat Mencintai Mu, [I Love You 💞](tg://settings)",
         ]
         animation_interval = 2
         animation_ttl = range(11)
@@ -470,7 +470,7 @@ CMD_HELP.update({
 CMD_HELP.update({
     "memes10":
     f"`{cmd}cinta`\
-    \nUsage: mengirim cintamu ke seseorang.\
+    \nUsage: mengirim cinta ke seseorang.\
     \n\n`{cmd}sange` ;  `{cmd}gblk`\
     \nUsage: cobalah sndiri ngentot."
 })
