@@ -138,8 +138,8 @@ async def _(event):
 
 CMD_HELP.update(
     {
-        "sosmed": f"**Plugin : **`ig`\
-        \n\n  •  **Syntax :** `{cmd}sosmed` <link>\
+        "sosmed": f"**Plugin : **`sosmed`\
+        \n\n  •  **Syntax :** `{cmd}ig` <link>\
         \n  •  **Function : **Download Media Dari Instagram.\
     "
     }
