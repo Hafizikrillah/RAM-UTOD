@@ -1375,6 +1375,17 @@ async def earth(event):
     except BaseException:
         return
 
+@bot.on(ram_cmd(outgoing=True, pattern="muah$"))
+async def muah(event):
+    deq = deque(list("😗😙😚😚😘"))
+    try:
+        for x in range(32):
+            await sleep(0.1)
+            await event.edit("".join(deq))
+            deq.rotate(1)
+    except BaseException:
+        return
+
 
 @bot.on(ram_cmd(outgoing=True, pattern=r"mock(?: |$)(.*)"))
 async def spongemocktext(mock):
@@ -1528,8 +1539,8 @@ async def typewriter(typew):
     elif textx:
         message = textx.text
     else:
-        return await typew.edit("`Berikan Sebuah Teks Untuk Type!`")
-    sleep_time = 0.03
+        return await typew.edit("`Berikan Sebuah Teks Untuk Animasi Type!`")
+    sleep_time = 0.02
     typing_symbol = "|"
     old_text = ""
     await typew.edit(typing_symbol)
@@ -1550,7 +1561,7 @@ async def leave(e):
                      "──▄▀█▄▄▄─────▄▀█▄▄▄\n"
                      "▄▀──█▄▄──────█─█▄▄\n"
                      "─▄▄▄▀──▀▄───▄▄▄▀──▀▄\n"
-                     "─▀───────▀▀─▀───────▀▀\n`Kabur Ah, Banyak Anak Haram disini, Awowkowkwk..`")
+                     "─▀───────▀▀─▀───────▀▀\n`Awowkowkwk Ngentod..`")
 
 
 @bot.on(ram_cmd(outgoing=True, pattern=r"fail$"))
@@ -1839,6 +1850,8 @@ CMD_HELP.update({
     "\nUsage: animasi bulan."
     f"\n\n>`{cmd}clock`"
     "\nUsage: animasi jam."
+    f"\n\n>`{cmd}muah`"
+    "\nUsage: animasi muah."
     f"\n\n>`{cmd}hi`"
     "\nUsage: Sapa semuanya!"
     f"\n\n>`{cmd}coinflip` <Kepala/Ekor>"
