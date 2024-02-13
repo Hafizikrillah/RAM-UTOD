@@ -76,7 +76,7 @@ async def spam_function(event, spammer, xnxx, sleeptimem, sleeptimet, DelaySpam=
                 await event.client.send_message(
                     BOTLOG_CHATID,
                     "#DELAYSPAM\n"
-                    + f"Delay spam was executed successfully in {get_display_name(await event.get_chat())}(`{event.chat_id}`) with {counter} times with below message with delay {sleeptimet} seconds",
+                    + f"Delay spam berhasil terkirim di {get_display_name(await event.get_chat())}(`{event.chat_id}`) sebanyak {counter} kali dengan jeda waktu {sleeptimet} detik",
                 )
 
             spammer = await event.client.send_file(BOTLOG_CHATID, spammer)
@@ -119,7 +119,7 @@ async def spam_function(event, spammer, xnxx, sleeptimem, sleeptimet, DelaySpam=
             await event.client.send_message(
                 BOTLOG_CHATID,
                 "#DELAYSPAM\n"
-                + f"Delay spam was executed successfully in {get_display_name(await event.get_chat())}(`{event.chat_id}`) chat with delay {sleeptimet} seconds and with {counter} messages of \n"
+                + f"Delay spam berhasil terkirim di {get_display_name(await event.get_chat())}(`{event.chat_id}`) dengan jeda {sleeptimet} detik dan sebanyak {counter} pesan \n"
                 + f"`{spam_message}`",
             )
 
