@@ -92,7 +92,7 @@ async def deploy(xx, repo, ups_rem, ac_br, txt):
                 xx, "**Gagal Apdet!** Di Karenakan Ada Code Yang rusak.`"
             )
         await edit_or_reply(
-            xx, f"**Seperti Nya, KANE-UBOT Mu Sudah Selesai Di Apdet, Silahkan Tunggu beberapa Saat Sampai Ada notif Dari KANE-UBOT, Setelah itu Test rams mu, jika tidak Bekerja Bisa Bertanya Ke @GeezRam**"
+            xx, f"**Seperti Nya, KANE-UBOT Mu Sudah Selesai Di Apdet, Silahkan Tunggu beberapa Saat Sampai Ada notif Dari KANE-UBOT, Setelah itu Test bot mu, jika tidak Bekerja Bisa Bertanya Ke @ucelbotk**"
     )
 
     else:
@@ -107,7 +107,7 @@ async def update(xx, repo, ups_rem, ac_br):
     except GitCommandError:
         repo.git.reset("--hard", "FETCH_HEAD")
     await edit_or_reply(
-        xx, f"**Seperti Nya, KANE-UBOT Mu Sudah Selesai Di Apdet, Silahkan Tunggu beberapa Saat Sampai Ada notif Dari KANE-UBOT, Setelah itu Test rams mu, jika tidak Bekerja Bisa Bertanya Ke @GeezRam**"
+        xx, f"**Seperti Nya, KANE-UBOT Mu Sudah Selesai Di Apdet, Silahkan Tunggu beberapa Saat Sampai Ada notif Dari KANE-UBOT, Setelah itu Test bot mu, jika tidak Bekerja Bisa Bertanya Ke @ucelbotk**"
     )
 
     try:
