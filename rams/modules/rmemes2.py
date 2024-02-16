@@ -1267,6 +1267,16 @@ async def moon(event):
     except BaseException:
         return
 
+@bot.on(ram_cmd(outgoing=True, pattern=r"lul$"))
+async def lul(event):
+    deq = deque(list("😂🤣😂🤣😂🤣"))
+    try:
+        for x in range(35):
+            await sleep(0.1)
+            await event.edit("".join(deq))
+            deq.rotate(1)
+    except BaseException:
+        return
 
 @bot.on(ram_cmd(outgoing=True, pattern=r"waktu$"))
 async def moon(event):
@@ -1783,6 +1793,15 @@ async def gas(e):
         await e.edit("__🚑_________________")
         await e.edit("🚑___________________")
         await e.edit("_____________________")
+        await e.edit("___________________🚑")
+        await e.edit("________________🚑___")
+        await e.edit("______________🚑_____")
+        await e.edit("___________🚑________")
+        await e.edit("________🚑___________")
+        await e.edit("_____🚑______________")
+        await e.edit("__🚑_________________")
+        await e.edit("🚑___________________")
+        await e.edit("_____________________")
         await e.edit(choice(FACEREACTS))
 
 
@@ -1852,6 +1871,8 @@ CMD_HELP.update({
     "\nUsage: animasi jam."
     f"\n\n>`{cmd}muah`"
     "\nUsage: animasi muah."
+    f"\n\n>`{cmd}lul`"
+    "\nUsage: animasi lul."
     f"\n\n>`{cmd}hi`"
     "\nUsage: Sapa semuanya!"
     f"\n\n>`{cmd}coinflip` <Kepala/Ekor>"
