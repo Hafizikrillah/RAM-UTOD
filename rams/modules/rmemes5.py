@@ -541,10 +541,8 @@ async def _(event):
     
 CMD_HELP.update({
     "memes9":
-    f"`{cmd}gabut` ; `{cmd}orgil`\
-    \nUsage: ntahlah gabut doang.\
-    \n\n`{cmd}ass`\
-    \nUsage: Salam duls biar sopan."
+    f"`{cmd}gabut` ; `{cmd}dino` ; `{cmd}orgil`\
+    \nUsage: ntahlah gabut doang."
 })
 
 CMD_HELP.update({
