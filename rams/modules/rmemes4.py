@@ -366,6 +366,21 @@ async def _(event):
     await typew.edit(".                       /¯ )\n                      /¯  /\n                    /    /\n              /´¯/'   '/´¯¯`•¸\n          /'/   /    /       /¨¯\\ \n        ('(   (   (   (  ¯~/'  ')\n         \\                        /\n          \\                _.•´\n            \\              (")
     await typew.edit(".                       /¯ )\n                      /¯  /\n                    /    /\n              /´¯/'   '/´¯¯`•¸\n          /'/   /    /       /¨¯\\ \n        ('(   (   (   (  ¯~/'  ')\n         \\                        /\n          \\                _.•´\n            \\              (\n              \\  ")
 
+@ram_cmd(pattern="luv(?: |$)(.*)")
+async def _(event):
+    typew = await edit_or_reply(event, ".｡ﾟﾟ･｡･ﾟﾟ｡")
+    await typew.edit(".｡ﾟﾟ･｡･ﾟﾟ｡\n         ﾟ。       ｡ ﾟ")
+    await typew.edit(".｡ﾟﾟ･｡･ﾟﾟ｡\n         ﾟ。       ｡ ﾟ\n             ﾟ･｡･ﾟ")
+    await typew.edit(".｡ﾟﾟ･｡･ﾟﾟ｡\n         ﾟ。       ｡ ﾟ\n             ﾟ･｡･ﾟ\n       ︵               ︵")
+    await typew.edit(".｡ﾟﾟ･｡･ﾟﾟ｡\n         ﾟ。       ｡ ﾟ\n             ﾟ･｡･ﾟ\n       ︵               ︵\n    (        ╲       /       /")
+    await typew.edit(".｡ﾟﾟ･｡･ﾟﾟ｡\n         ﾟ。       ｡ ﾟ\n             ﾟ･｡･ﾟ\n       ︵               ︵\n    (        ╲       /       /\n           ╲          ╲  /")
+    await typew.edit(".｡ﾟﾟ･｡･ﾟﾟ｡\n         ﾟ。       ｡ ﾟ\n             ﾟ･｡･ﾟ\n       ︵               ︵\n    (        ╲       /       /\n           ╲          ╲  /\n          ╭ ‌   ╲           ╲")
+    await typew.edit(".｡ﾟﾟ･｡･ﾟﾟ｡\n         ﾟ。       ｡ ﾟ\n             ﾟ･｡･ﾟ\n       ︵               ︵\n    (        ╲       /       /\n           ╲          ╲  /\n          ╭ ‌   ╲           ╲\n     ╭ ‌   ╲        ╲       ﾉ")
+    await typew.edit(".｡ﾟﾟ･｡･ﾟﾟ｡\n         ﾟ。       ｡ ﾟ\n             ﾟ･｡･ﾟ\n       ︵               ︵\n    (        ╲       /       /\n           ╲          ╲  /\n          ╭ ‌   ╲           ╲\n     ╭ ‌   ╲        ╲       ﾉ\n╭ ‌   ╲        ╲         ╱")
+    await typew.edit(".｡ﾟﾟ･｡･ﾟﾟ｡\n         ﾟ。       ｡ ﾟ\n             ﾟ･｡･ﾟ\n       ︵               ︵\n    (        ╲       /       /\n           ╲          ╲  /\n          ╭ ‌   ╲           ╲\n     ╭ ‌   ╲        ╲       ﾉ\n╭ ‌   ╲        ╲         ╱\n ╲       ╲          ╱")
+    await typew.edit(".｡ﾟﾟ･｡･ﾟﾟ｡\n         ﾟ。       ｡ ﾟ\n             ﾟ･｡･ﾟ\n       ︵               ︵\n    (        ╲       /       /\n           ╲          ╲  /\n          ╭ ‌   ╲           ╲\n     ╭ ‌   ╲        ╲       ﾉ\n╭ ‌   ╲        ╲         ╱\n ╲       ╲          ╱\n      ╲         ╱")
+    await typew.edit(".｡ﾟﾟ･｡･ﾟﾟ｡\n         ﾟ。       ｡ ﾟ\n             ﾟ･｡･ﾟ\n       ︵               ︵\n    (        ╲       /       /\n           ╲          ╲  /\n          ╭ ‌   ╲           ╲\n     ╭ ‌   ╲        ╲       ﾉ\n╭ ‌   ╲        ╲         ╱\n ╲       ╲          ╱\n      ╲         ╱\n          ︶")
+
 CMD_HELP.update({
     "memes7":
     f"`{cmd}bulan` ; `{cmd}hati` ; `{cmd}tolol`\
