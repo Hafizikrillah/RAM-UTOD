@@ -88,14 +88,14 @@ async def _(ping):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     user = await ping.client.get_me()
-    await ping.client.send_message(
+    await ping.reply(
         ping.chat_id, f"**╰•★★ |Kane Ping| ★★•╯**\n"
                     f"★ **speed:** "
                     f"`%sms` \n"
                     f"★ **Uptime:** "
                     f"`{uptime}` \n"
-                    f"★ **owner:** [{user.first_name}](tg://user?id={user.id})\n" % (duration), reply_to=ping.reply_to_msg_id)
-    await ping.reply()
+                    f"★ **owner:** [{user.first_name}](tg://user?id={user.id})\n" % (duration)
+    )
 
 @ram_cmd(pattern="rping$")
 @register(pattern=r"^\.cping(?: |$)(.*)", sudo=True)
