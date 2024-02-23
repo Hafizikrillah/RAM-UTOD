@@ -102,7 +102,7 @@ BOTLOG_CHATID = int(os.environ.get("BOTLOG_CHATID") or 0)
 # Bleep Blop, this is a bot ;)
 PM_AUTO_BAN = sb(os.environ.get("PM_AUTO_BAN", "False"))
 
-LMT_PM = int(os.environ.get("LMT_PM", 5))
+LMT_PM = int(os.environ.get("LMT_PM", 3))
 
 # Send .chatid in any group with all your administration bots (added)
 G_BAN_LOGGER_GROUP = os.environ.get("G_BAN_LOGGER_GROUP", "")
@@ -321,7 +321,7 @@ CH_SFS = os.environ.get("CH_SFS") or "t.me/secretuo"
 
 # Last.fm Module
 BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
-DEFAULT_BIO = os.environ.get("DEFAULT_BIO") or "⭐𝗞𝗔𝗡𝗘-𝗨𝗕𝗢𝗧⭐"
+DEFAULT_BIO = os.environ.get("DEFAULT_BIO") or "🤖𝗞𝗔𝗡𝗘-𝗨𝗕𝗢𝗧🤖"
 
 # LASTFM_API = os.environ.get("LASTFM_API", None)
 # LASTFM_SECRET = os.environ.get("LASTFM_SECRET", None)
@@ -682,7 +682,7 @@ with bot:
                 result = builder.photo(
                     file=ramlogo,
                     link_preview=False,
-                    text=f"**✨ KANE - UBOT MENU ✨**\n\n•  **Owner** [{user.first_name}](tg://user?id={user.id})\n•  **Jumlah** `{len(dugmeler)}` Modules",
+                    text=f"**🤖 KANE - UBOT MENU 🤖**\n\n•  **Owner** [{user.first_name}](tg://user?id={user.id})\n•  **Jumlah** `{len(dugmeler)}` Modules",
                     buttons=buttons,
                 )
             elif query.startswith("repo"):
@@ -691,7 +691,7 @@ with bot:
                     description="Repository RAM - UBOT",
                     url="https://t.me/ramsupportt",
                     thumb=InputWebDocument(HELP_LOGO, 0, "image/jpeg", []),
-                    text="**🌟 KANE - UBOT 🌟**\n➖➖➖➖➖➖➖➖➖➖\n❍▸ **Owner Repo :** [merdhani](https://t.me/merdhni)\n**Support :** @UserbotCh\n❍▸ **Repository :** [⭐ KANE - UBOT ⭐](https://github.com/izzy-adeeva/RAM-UTOD)\n➖➖➖➖➖➖➖➖➖➖",
+                    text="**🤖 KANE - UBOT 🤖**\n➖➖➖➖➖➖➖➖➖➖\n❍▸ **Owner Repo :** [merdhani](https://t.me/merdhni)\n**Support :** @UserbotCh\n❍▸ **Repository :** [🤖 KANE - UBOT 🤖](https://github.com/izzy-adeeva/RAM-UTOD)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/GeezRam"),
@@ -736,23 +736,23 @@ with bot:
                 )
             else:
                 result = builder.article(
-                    title="🌟 KANE - UBOT 🌟",
-                    description="KANE - UBOT | Telethon",
-                    url="https://t.me/GeezRam",
+                    title="🤖 KANE - UBOT 🤖",
+                    description="USERBOT BY @ABANGE",
+                    url="https://t.me/ucelbotk",
                     thumb=InputWebDocument(HELP_LOGO, 0, "image/jpeg", []),
-                    text=f"**✨ KANE - UBOT ✨**\n➖➖➖➖➖➖➖➖➖➖\n**UserMode:** [{user.first_name}](tg://user?id={user.id})\n**Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**Support:** @UserbotCh\n➖➖➖➖➖➖➖➖➖➖",
+                    text=f"**🤖 KANE - UBOT 🤖**\n➖➖➖➖➖➖➖➖➖➖\n**UserMode:** [{user.first_name}](tg://user?id={user.id})\n**Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**Support:** @ucelbotk\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
-                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/GeezRam"),
+                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/ucelbotk"),
                             custom.Button.url(
-                                "ʀᴇᴘᴏꜱɪᴛᴏʀʏ", "https://github.com/izzy-adeeva/RAM-UTOD"
+                                "ʀᴇᴘᴏꜱɪᴛᴏʀʏ", "https://github.com/Hafizikrillah/RAM-UTOD"
                              ),
                         ],
                     ],
                     link_preview=False,
                 )
             await event.answer(
-                [result], switch_pm="👥 rams PORTAL", switch_pm_param="start"
+                [result], switch_pm="👥 KANE PORTAL", switch_pm_param="start"
             )
 
         @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(rb"reopen")))
@@ -760,7 +760,7 @@ with bot:
             if event.query.user_id == uid or event.query.user_id in SUDO_USERS:
                 current_page_number = int(looters)
                 buttons = paginate_help(current_page_number, dugmeler, "helpme")
-                text = f"**⭐ KANE - UBOT ⭐ Inline Menu**\n\n🔸 **Owner** [{user.first_name}](tg://user?id={user.id})\n•  **Jumlah** `{len(dugmeler)}` Module"
+                text = f"**🤖 KANE - UBOT 🤖 Inline Menu**\n\n🔸 **Owner** [{user.first_name}](tg://user?id={user.id})\n•  **Jumlah** `{len(dugmeler)}` Module"
                 await event.edit(
                     text,
                     file=ramlogo,
@@ -792,7 +792,7 @@ with bot:
             if event.query.user_id == uid or event.query.user_id in DEVS and SUDO_USERS:
                 openlagi = custom.Button.inline("• Re-Open Menu •", data="reopen")
                 await event.edit(
-                    "✴️ **Help Mode Button Ditutup!** ✴️", buttons=openlagi
+                    "🤖 **Help Mode Button Ditutup!** 🤖", buttons=openlagi
                 )
             else:
                 reply_pop_up_alert = f"Dikata Jangan Asal Pencet Anjing, itu milik {owner}"
