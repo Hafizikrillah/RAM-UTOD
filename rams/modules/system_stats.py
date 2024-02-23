@@ -226,7 +226,7 @@ async def amireallyalive(alive):
     user = await alive.client.get_me()
     uptime = await get_readable_time((time.time() - StartTime))
     output = (
-        f"**[RAM-UBOT](https://github.com/ramadhani892/RAM-UBOT) Update dan berjalan.**\n\n"
+        f"**[KANE-UBOT](https://t.me/abangE) Update dan berjalan.**\n\n"
         f"**╭✠╼━━━━━━❖━━━━━━━✠╮**\n"
         f"       **{aliver}**\n"
         f"**╰✠╼━━━━━━❖━━━━━━━✠╯**\n\n"
@@ -239,7 +239,7 @@ async def amireallyalive(alive):
         f"{emo} **Telethon Version :** `{version.__version__}` \n"
         f"{emo} **Bot Uptime :** `{uptime}` \n"
         f"{emo} **Branch     :** `[{branch}]` \n"
-        f"    **[𝗦𝘂𝗽𝗽𝗼𝗿𝘁]({GROUP_LINK})** | **[𝗖𝗵𝗮𝗻𝗻𝗲𝗹]({CH_SFS})** | **[𝗢𝘄𝗻𝗲𝗿](tg://user?id={user.id})**\n"
+        f"    **[𝗦𝘂𝗽𝗽𝗼𝗿𝘁]({GROUP_LINK})** | **[𝗢𝘄𝗻𝗲𝗿](tg://user?id={user.id})**\n"
         f"▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰"
     )
     if ALIVE_LOGO:
