@@ -366,6 +366,14 @@ async def _(event):
     await typew.edit(".                       /¯ )\n                      /¯  /\n                    /    /\n              /´¯/'   '/´¯¯`•¸\n          /'/   /    /       /¨¯\\ \n        ('(   (   (   (  ¯~/'  ')\n         \\                        /\n          \\                _.•´\n            \\              (")
     await typew.edit(".                       /¯ )\n                      /¯  /\n                    /    /\n              /´¯/'   '/´¯¯`•¸\n          /'/   /    /       /¨¯\\ \n        ('(   (   (   (  ¯~/'  ')\n         \\                        /\n          \\                _.•´\n            \\              (\n              \\  ")
 
+@ram_cmd(pattern="ipong(?: |$)(.*)")
+async def _(event):
+    typew = await edit_or_reply(event, "🎛⬜️⬜️")
+    await typew.edit("🎛⬜️⬜️\n⬜️⬜️⬜️")
+    await typew.edit("🎛⬜️⬜️\n⬜️⬜️⬜️\n⬜️🍎⬜️")
+    await typew.edit("🎛⬜️⬜️\n⬜️⬜️⬜️\n⬜️🍎⬜️\n⬜️⬜️⬜️")
+    await typew.edit("🎛⬜️⬜️\n⬜️⬜️⬜️\n⬜️🍎⬜️\n⬜️⬜️⬜️\n⬜️⬜️⬜️")
+
 @ram_cmd(pattern="luv(?: |$)(.*)")
 async def _(event):
     typew = await edit_or_reply(event, ".｡ﾟﾟ･｡･ﾟﾟ｡")
@@ -391,10 +399,10 @@ CMD_HELP.update({
 
 CMD_HELP.update({
     "memes8":
-    f".y` ; `.g` ; `{cmd}gkck`\
+    f".y` ; `.g` ; `{cmd}lul` ; `{cmd}luv`\
     \nUsage: jempol.\
-    \n\n`{cmd}tawa` ; `{cmd}oy` ; `{cmd}fck`\
-    \nUsage: ketawa lari , Nyuruh nimbrung , fvck & Coba sendiri.\
+    \n\n`{cmd}tawa` ; `{cmd}ipong` ; `{cmd}fck`\
+    \nUsage: ketawa lari , ipong pro mag , fvck.\
     \n\n`{cmd}ular` ; `{cmd}supr` ; `{cmd}babi` ; `{cmd}ajg`\
     \nUsage: liat sendiri."
 })
