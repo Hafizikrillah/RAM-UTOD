@@ -25,7 +25,7 @@
 
 
 ## DEPLOY TO HEROKU
-<a href="https://heroku.com/deploy?template=https://github.com/Hafizikrillah/RAM-UTOD"><img src="https://www.herokucdn.com/deploy/button.svg"></a>
+<a href="https://heroku.com/deploy?template=https://github.com/kaneepep/RAM-UTOD"><img src="https://www.herokucdn.com/deploy/button.svg"></a>
 </div>
 """
 DISCLAIMER,
