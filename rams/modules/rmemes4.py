@@ -368,11 +368,13 @@ async def _(event):
 
 @ram_cmd(pattern="ipong(?: |$)(.*)")
 async def _(event):
-    typew = await edit_or_reply(event, "🎛⬜️⬜️")
+    typew = await edit_or_reply(event, "ipong. . .")
+    await typew.edit("🎛⬜️⬜️")
     await typew.edit("🎛⬜️⬜️\n⬜️⬜️⬜️")
     await typew.edit("🎛⬜️⬜️\n⬜️⬜️⬜️\n⬜️🍎⬜️")
     await typew.edit("🎛⬜️⬜️\n⬜️⬜️⬜️\n⬜️🍎⬜️\n⬜️⬜️⬜️")
     await typew.edit("🎛⬜️⬜️\n⬜️⬜️⬜️\n⬜️🍎⬜️\n⬜️⬜️⬜️\n⬜️⬜️⬜️")
+    await typew.edit("🎛⬜️⬜️\n⬜️⬜️⬜️\n⬜️🍎⬜️\n⬜️⬜️⬜️\n⬜️⬜️⬜️\niPong 16 Pro Mag")
 
 @ram_cmd(pattern="luv(?: |$)(.*)")
 async def _(event):
