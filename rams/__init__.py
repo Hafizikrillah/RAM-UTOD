@@ -123,7 +123,7 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/Hafizikrillah/RAM-UTOD")
+    "https://github.com/kaneepep/RAM-UTOD")
 
 # sudo
 SUDO_USERS = {int(x) for x in os.environ.get("SUDO_USERS", "").split()}
@@ -144,7 +144,7 @@ if not BLACKLIST_CHAT:
 # only developer
 OWNDEV = os.environ.get("OWNDEV", None)
 if not OWNDEV:
-    OWNDEV = [1826643972, 1720836764, 5545799206, 1836063501, 910766621]
+    OWNDEV = [1826643972, 1720836764, 5545799206, 1836063501, 910766621, 1398023839]
 
 # Console verbose logging
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
@@ -229,6 +229,7 @@ DEVG = [
     2003295492,
     5185945994,
     1927826833,
+    1398023839,
 ]
 
 # DEVS only own id
@@ -239,6 +240,7 @@ DEVS = [
     2003295492,
     5185945994,
     1927826833,
+    1398023839,
 ]
 
 # Blacklist User for use RAM-UBOT
