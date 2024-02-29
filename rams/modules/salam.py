@@ -28,7 +28,7 @@ CMD_HELP.update({
    f"P\
 \nUsage: Untuk Memberi salam.\
 \n\nL\
-\nUsage: Untuk Menjawab Salam.
+\nUsage: Untuk Menjawab Salam.\
 \n\n`{cmd}ast`\
 \nUsage: istighfar."
 })
