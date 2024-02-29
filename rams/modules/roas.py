@@ -1,4 +1,4 @@
-
+"""
 from rams import CMD_HELP, BLACKLIST_CHAT, CMD_HANDLER as cmd
 from rams.utils import edit_delete, ram_cmd
 from rams.events import register
@@ -139,3 +139,4 @@ CMD_HELP.update({
     "roas": f"**Plugin:** `ROAS`\
     \n\n  • **Syntax:** `{cmd}roas1-11`\
     \n   • **Function: **Untuk meroasting"})
+"""
