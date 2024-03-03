@@ -34,10 +34,10 @@ else:
 
 async def creatgr():
     LOGS.info("LAGI GUA BIKININ GRUP BUAT LO NGENTOT LO KONTOL")
-    desc = "Group Log untuk ⭐KANE-UBOT⭐.\n\nJANGAN KELUAR LO MONYED NANTI CRASH!.\n\n✨ Developer ~ @abangE ✨"
+    desc = "Group Log untuk KANE-UBOT.\n\nJANGAN KELUAR NANTI CRASH!\n\n✨ Developer ~ @abangE ✨"
     try:
         grup = await bot(
-            CreateChannelRequest(title="✨KANE UBOT✨ LOGS", about=desc, megagroup=True)
+            CreateChannelRequest(title="KANE UBOT LOGS", about=desc, megagroup=True)
         )
         grup_id = grup.chats[0].id
     except Exception as e:
@@ -55,7 +55,7 @@ async def autobot():
         return
     await bot.start()
     await bot.send_message(
-        BOTLOG_CHATID, "**GUA LAGI BIKIN BOT ASSISTANT DI @BOTFATHER YA NGENTOD, SABAR DULU LU, KALO GA SABAR MATI AJA NYUSUL BAPAK LO**"
+        BOTLOG_CHATID, "**SEDANG MEMBUAT BOT ASSISTANT DI @BOTFATHER, MOHON TUNGGU BEBERAPA SAAT SAMPAI BOT MERESTART**"
     )
     who = await bot.get_me()
     name = who.first_name + " Assistant"
