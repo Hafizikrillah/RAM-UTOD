@@ -96,35 +96,18 @@ async def _(ping):
             f"★ **owner:** [{user.first_name}](tg://user?id={user.id})\n" % (duration)
     )
 
-@ram_cmd(pattern="rping$")
+@ram_cmd(pattern="kping$")
 @register(pattern=r"^\.cping(?: |$)(.*)", sudo=True)
 async def _(pong):
     """For .ping command, ping the rams from any chat."""
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    ram = await edit_or_reply(pong, "**Mengecek Sinyal...**")
-    await ram.edit("**▁**")
-    await ram.edit("**▁ ▂**")
-    await ram.edit("**▁ ▂ ▄**")
-    await ram.edit("**▁ ▂ ▄ ▅**")
-    await ram.edit("**▁ ▂ ▄ ▅ ▆**")
-    await ram.edit("**▁ ▂ ▄ ▅ ▆ ▇**")
-    await ram.edit("**▁ ▂ ▄ ▅ ▆ ▇ █**")
-    await ram.edit("**▁ ▂ ▄ ▅ ▆ ▇**")
-    await ram.edit("**▁ ▂ ▄ ▅ ▆**")
-    await ram.edit("**▁ ▂ ▄ ▅ **")
-    await ram.edit("**▁ ▂ ▄**")
-    await ram.edit("**▁ ▂**")
-    await ram.edit("**▁**")
-    await ram.edit("**▁ ▂**")
-    await ram.edit("**▁ ▂ ▄**")
-    await ram.edit("**▁ ▂ ▄ ▅**")
-    await ram.edit("**▁ ▂ ▄ ▅ ▆**")
-    await ram.edit("**▁ ▂ ▄ ▅ ▆ ▇**")
-    await ram.edit("**▁ ▂ ▄ ▅ ▆ ▇ █**")
-    await asyncio.sleep(1)
-    await ram.edit("✨")
-    await asyncio.sleep(3)
+    ram = await edit_or_reply(pong, "**★ PING... ★**")
+    await ram.edit("**★★ PING... ★★**")
+    await ran.edit("**★★★ PING... ★★★**")
+    await ram.edit("**★★★★ PING... ★★★★**")
+    await ram.edit("**✦҈͜͡➳ PONG!**")
+    await asyncio.sleep(2)
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     user = await pong.client.get_me()
@@ -144,30 +127,13 @@ async def redis(pong):
     """For .ping command, ping the rams from any chat."""
     await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    ram = await edit_or_reply(pong, "**𓀐.....................................𓂸**")
-    await ram.edit("**𓀐..................................𓂸..**")
-    await ram.edit("**𓀐................................𓂸....**")
-    await ram.edit("**𓀐..............................𓂸......**")
-    await ram.edit("**𓀐............................𓂸........**")
-    await ram.edit("**𓀐..........................𓂸..........**")
-    await ram.edit("**𓀐.......................𓂸.............**")
-    await ram.edit("**𓀐.....................𓂸...............**")
-    await ram.edit("**𓀐...................𓂸.................**")
-    await ram.edit("**𓀐..................𓂸..................**")
-    await ram.edit("**𓀐................𓂸....................**")
-    await ram.edit("**𓀐..............𓂸......................**")
-    await ram.edit("**𓀐............𓂸........................**")
-    await ram.edit("**𓀐..........𓂸..........................**")
-    await ram.edit("**𓀐........𓂸............................**")
-    await ram.edit("**𓀐.......𓂸.............................**")
-    await ram.edit("**𓀐....𓂸...............................**")
-    await ram.edit("**𓀐..𓂸.................................**")
-    await ram.edit("**𓀐.𓂸..................................**")
-    await ram.edit("**𓀐𓂸...................................**")
-    await ram.edit("**𓀐.𓂸..................................**")
-    await ram.edit("**𓀐𓂸...................................**")
-    await ram.edit("**𓀐.𓂸..................................**")
-    await ram.edit("**𓂺**")
+    ram = await edit_or_reply(pong, "**✧**")
+    await ram.edit("**✧✧**")
+    await ram.edit("**✧✧✧**")
+    await ram.edit("**✧✧✧✧**")
+    await ram.edit("**✧✧✧✧✧**")
+    await asyncio.sleep(1)
+    await ram.edit("**✧**")
     await asyncio.sleep(2)
     end = datetime.now()
     duration = (end - start).microseconds / 1000
@@ -243,9 +209,10 @@ async def pingme(pong):
     await pong.delete()
 
 CMD_HELP.update({
-    "ping": f"𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}ping` or `{cmd}rping` or `{cmd}pink`\
-         \n↳ : Untuk Menunjukkan Ping Bot Anda.\
-         \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}speed`\
-         \n↳ : Untuk Menunjukkan Kecepatan Jaringan Anda.\
-         \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}pong`\
-         \n↳ : Sama Seperti Perintah {cmd}pink."})
+    "ping":
+    f"**Plugin : **`ping`\
+    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}ping` | `{cmd}kping` | `{cmd}pink` | `{cmd}pong`\
+\n↳ : Untuk Menunjukkan Ping Bot Anda.\
+\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}alive`\
+\n↳ : Untuk Menunjukkan Bot Anda Hidup."
+})
