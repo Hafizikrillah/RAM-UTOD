@@ -12,7 +12,7 @@ MSG_ON = """
 🔥 **Kane-Userbot Berhasil Di Aktifkan**
 ━━
 ➠ **Userbot Version -** `{}`
-➠ **Ketik** `{}help ping` **untuk Mengecheck Bot**
+➠ **Ketik** `{}help ping` **untuk mengecheck Bot**
 ━━
 """
 
