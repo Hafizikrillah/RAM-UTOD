@@ -64,7 +64,7 @@ async def creategr():
     channel = get_peer_id(chat)
     if isinstance(chat.photo, ChatPhotoEmpty):
         photo = await download_file(
-            "https://telegra.ph/file/f47feeebbcb7be0472f8e.png",
+            "https://telegra.ph/file/1dc488f17d5db1683ea58.jpg",
         )
         ll = await bot.upload_file(photo)
         try:
