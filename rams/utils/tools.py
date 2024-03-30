@@ -16,6 +16,8 @@
 #
 
 
+import aiofiles
+import aiohttp
 import asyncio
 import hashlib
 import os
@@ -41,6 +43,8 @@ from yt_dlp import YoutubeDL
 
 from rams import LOGS, SUDO_USERS, bot
 from rams.utils.format import md_to_text, paste_message
+
+from .FastTelethon import download_file as downloadable
 
 
 def deEmojify(inputString):
