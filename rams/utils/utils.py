@@ -35,7 +35,7 @@ else:
     app = None
 
 
-async def creategr():
+async def creatgr():
     LOGS.info("SEDANG MEMBUAT GROUP LOG ANDA")
     if BOTLOG_CHATID and str(BOTLOG_CHATID).startswith("-100"):
         return
