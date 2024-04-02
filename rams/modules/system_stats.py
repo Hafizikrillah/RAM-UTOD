@@ -226,19 +226,16 @@ async def amireallyalive(alive):
     user = await alive.client.get_me()
     uptime = await get_readable_time((time.time() - StartTime))
     output = (
-        f"**[KANE-UBOT](https://t.me/abangE) Update dan berjalan.**\n\n"
+        f"**KANE-UBOT Update dan berjalan.**\n\n"
         f"**╭✠╼━━━━━━❖━━━━━━━✠╮**\n"
         f"       **{aliver}**\n"
         f"**╰✠╼━━━━━━❖━━━━━━━✠╯**\n\n"
         f"▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰\n"
-        f"{emo} **Master :** [{user.first_name}](tg://user?id={user.id}) \n"
-        f"{emo} **Modules :** `{len(modules)} Modules` \n"
+        f"{emo} **Tuan :** [{user.first_name}](tg://user?id={user.id}) \n"
+        f"{emo} **Username :** @{user.username} \n"
         f"{emo} **Bot Version :** `{BOT_VER}` \n"
-        f"{emo} **Python Version :** `{python_version()}` \n"
-        f"{emo} **Pytgcalls Version :** `{pytgcalls.__version__}` \n"
-        f"{emo} **Telethon Version :** `{version.__version__}` \n"
         f"{emo} **Bot Uptime :** `{uptime}` \n"
-        f"{emo} **Branch     :** `[{branch}]` \n"
+        f"{emo} **Modules :** `{len(modules)} Modules` \n"
         f"    **[𝗦𝘂𝗽𝗽𝗼𝗿𝘁]({GROUP_LINK})** | **[𝗢𝘄𝗻𝗲𝗿](tg://user?id={user.id})**\n"
         f"▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰"
     )
